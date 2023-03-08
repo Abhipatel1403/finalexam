@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>checkout</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+    <a href="#" class="logo"><img src="img/logo.png"></a>
+
+    <nav class="navbar">
+       <b><a href="index.html">home</a></b>
+       <b><a href="menu.html">menu</a></b>
+       <b><a href="orders.html">orders</a></b>
+       <b> <a href="contact.html">contact</a></b>
+    </nav>
+
+
+      <div class="icons">
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">Abhi patel</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">profile</a>
+            <a href="#" class="delete-btn">logout</a>
+         </div>
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="checkout">
+
+   <h1 class="title">Order summary</h1>
+
+   <form action="" method="post">
+      <div class="cart-items">
+         <h3>cart items</h3>
+         <p><span class="name">Matcha white frappucino</span><span class="price">₹499</span></p>
+         <p><span class="name">Matcha pink frappucino</span><span class="price">₹549</span></p>
+         <p><span class="name">Unicorn frappucino</span><span class="price">₹559</span></p>
+         <p class="grand-total"><span class="name">grand total :</span> <span class="price">₹1607</span></p>
+         <a href="cart.html" class="btn">view cart</a>
+      </div>
+      <div class="user-info">
+         <h3>your info</h3>
+         <p><i class="fas fa-user"></i> <span>Abhi patel</span></p>
+         <p><i class="fas fa-phone"></i> <span>9876543210</span></p>
+         <p><i class="fas fa-envelope"></i> <span>abhipatel@gmail.com</span></p>
+         <a href="update_profile.html" class="btn">update info</a>
+         <h3>delivery address</h3>
+         <p class="address"><i class="fas fa-map-marker-alt"></i> <span>flat no. 1, building no. 1,Bopal,Ahmedabad,Gujarat,india-380058</span></p>
+         <a href="update_address.html" class="btn">Update address</a>
+         <select name="method" class="box" required>
+            <option value="" disabled selected>Select payment method</option>
+            <option value="cash on delivery">Cash on delivery</option>
+            <option value="credit card">Credit card</option>
+            <option value="paytm">Paytm</option>
+            <option value="paypal">Paypal</option>
+            <option value="upi">Upi</option>
+         </select>
+      </div>
+      <div class="more-btn">
+         <a href="#" class="order-btn" onclick="return confirm('Successfully placed order.');">Placed Order</a>
+      </div> 
+   </form>
+
+</section>
+
+<footer class="footer">
+
+    <section class="box-container">
+ 
+       <div class="box">
+          <img src="img/email-icon.png" alt="">
+          <h3>our email</h3>
+          <a href="mailto:info@starbucks.com">info@starbucks.com</a>
+          <a href="mailto:contact@starbucks.com">contact@starbucks.com</a>
+       </div>
+ 
+       <div class="box">
+          <img src="img/clock-icon.png" alt="">
+          <h3>opening hours</h3>
+          <p>8:00am to 10:00pm </p>
+       </div>
+ 
+       <div class="box">
+          <img src="img/map-icon.png" alt="">
+          <h3>our address</h3>
+          <a href="https://www.google.com/maps">Ahmedabad,Gujarat,India-380054</a>
+       </div>
+ 
+       <div class="box">
+          <img src="img/phone-icon.png" alt="">
+          <h3>our number</h3>
+          <a href="tel:1860-266-0010">+1860-266-0010</a>
+       
+       </div>
+ 
+    </section>
+ 
+    <div class="credit">&copy; copyright @ 2023 by <span>Mr. Abhi Patel</span> | all rights reserved!</div>
+ 
+ </footer>
+ 
+ <div class="loader">
+    <img src="img/loader.gif" alt="">
+ </div>
+ 
+ <script src="script.js"></script>
+ 
+ </body>
+ </html>
+ 
